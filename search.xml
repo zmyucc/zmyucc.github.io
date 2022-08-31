@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MacOs下将Hexo部署到Github Pages</title>
+    <url>/2022/08/25/MacOs%E4%B8%8B%E5%B0%86Hexo%E9%83%A8%E7%BD%B2%E5%88%B0Github%20Pages/</url>
+    <content><![CDATA[<p><a href="hexo.io">Hexo</a>是一个快速、简洁且高效的博客框架。得益于Node.js的快速生成速度，几百个网页可在几秒钟内生成。<br>Hexo支持Markdown的所有功能，只需一条指令即可部署成功。</p>
+<span id="more"></span>
+<h2 id="一、配置本地环境"><a href="#一、配置本地环境" class="headerlink" title="一、配置本地环境"></a>一、配置本地环境</h2><h3 id="1、安装Homebrew"><a href="#1、安装Homebrew" class="headerlink" title="1、安装Homebrew"></a>1、安装<a href="https://brew.sh/">Homebrew</a></h3><p>将下面的命令复制到MacOs终端以安装<a href="https://brew.sh/">Homebrew</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="2、安装git"><a href="#2、安装git" class="headerlink" title="2、安装git"></a>2、安装<a href="https://git-scm.com/">git</a></h3><p>在终端输入下面的命令安装<a href="https://git-scm.com/">git</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<h3 id="3、安装Node-js"><a href="#3、安装Node-js" class="headerlink" title="3、安装Node.js"></a>3、安装<a href="https://nodejs.org/zh-cn/">Node.js</a></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+<h3 id="4、安装Hexo"><a href="#4、安装Hexo" class="headerlink" title="4、安装Hexo"></a>4、安装<a href="https://hexo.io/zh-cn/">Hexo</a></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="5、安装git部署服务"><a href="#5、安装git部署服务" class="headerlink" title="5、安装git部署服务"></a>5、安装git部署服务</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="6、使用Hexo创建本地网站"><a href="#6、使用Hexo创建本地网站" class="headerlink" title="6、使用Hexo创建本地网站"></a>6、使用<a href="https://hexo.io/zh-cn/">Hexo</a>创建本地网站</h3><h4 id="（1）新建网站文件夹"><a href="#（1）新建网站文件夹" class="headerlink" title="（1）新建网站文件夹"></a>（1）新建网站文件夹</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir blog</span><br></pre></td></tr></table></figure>
+<h4 id="（2）进入网站目录并使用Hexo生成网站"><a href="#（2）进入网站目录并使用Hexo生成网站" class="headerlink" title="（2）进入网站目录并使用Hexo生成网站"></a>（2）进入网站目录并使用Hexo生成网站</h4><p>在终端输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd blog</span><br><span class="line">hexo init blog</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>访问 <a href="http://localhost:4000/">http://localhost:4000</a> ，查看到Hexo初始界面，即Hexo本地配置成功。<br>在终端输入control+c退出预览。</p>
+<h2 id="二、配置GitHub-Pages"><a href="#二、配置GitHub-Pages" class="headerlink" title="二、配置GitHub Pages"></a>二、配置GitHub Pages</h2><h3 id="1、注册GitHub账户"><a href="#1、注册GitHub账户" class="headerlink" title="1、注册GitHub账户"></a>1、注册GitHub账户</h3><h3 id="2、创建新仓库"><a href="#2、创建新仓库" class="headerlink" title="2、创建新仓库"></a>2、创建新仓库</h3><p>仓库名称为：yourname.github.io(yourname必须为自己的github ID)</p>
+<h3 id="3、修改Hexo全局配置文件"><a href="#3、修改Hexo全局配置文件" class="headerlink" title="3、修改Hexo全局配置文件"></a>3、修改Hexo全局配置文件</h3><p>更改网站根目录下_config.yml文件，在文件最后添加以下内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>将yourname修改为自己的github ID</p>
+<h2 id="三、配置SSH-KEY"><a href="#三、配置SSH-KEY" class="headerlink" title="三、配置SSH KEY"></a>三、配置SSH KEY</h2><h3 id="1、生成SSH-KEY"><a href="#1、生成SSH-KEY" class="headerlink" title="1、生成SSH KEY"></a>1、生成SSH KEY</h3><p>打开终端，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;Your Email Address&quot;</span><br></pre></td></tr></table></figure>
+<p>提示输入密码和确认密码，如不想设置可以单击回车。</p>
+<h3 id="2、将SSH-KEY-添加到GitHub"><a href="#2、将SSH-KEY-添加到GitHub" class="headerlink" title="2、将SSH KEY 添加到GitHub"></a>2、将SSH KEY 添加到GitHub</h3><p>单击访达➡️前往➡️个人➡️.ssh➡️id_rsa.pub，并复制id_rsa.pub的全部内容<br>找不到.ssh文件夹可以点击shift+command+. ，即可显示隐藏的文件夹。<br>打开GitHub主页，点击头像进入setting，点击SSH and GPG keys，在点击New SSH Key。将内容复制进key，tittle内容可以为空。最后点击Add SSH key<br>在终端输入以下命令以测试是否成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@GitHub.com</span><br></pre></td></tr></table></figure>
+<p>接下来会提示是否继续连接，在终端输入yes。<br>若出现以下提示，即SSH Key 添加成功。</p>
+<h2 id="四、将本地内容上传到github"><a href="#四、将本地内容上传到github" class="headerlink" title="四、将本地内容上传到github"></a>四、将本地内容上传到github</h2><p>终端进入网站目录，并输入以下命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+</search>
