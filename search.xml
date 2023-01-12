@@ -25,24 +25,11 @@
 <p><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/f8c9fa9d/4.png" alt="通过验证"></p>
 <p>如果未通过，则确定好填写的信息和证明文件的清晰度，多提交几次，一般就可以通过了。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Mac下校验文件的MD5</title>
-    <url>/posts/b8295e0f.html</url>
-    <content><![CDATA[<p>为了避免文件在传输过程中损坏或被恶意篡改，我们可以校验下载后文件的MD5，与提供的MD5对比。若两者不一致，则该文件损坏或已被修改。</p>
-<span id="more"></span>
-
-<p>1、打开终端。</p>
-<p>2、在终端内输入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">md5 [文件路径]</span><br></pre></td></tr></table></figure>
-
-<div class="admonition note"><p>文件路径可通过拖拽文件至终端内获得。</p>
-</div>
-
-<p>3、输入回车，等待结果。（若文件较大可能校验时间更久）</p>
-<p><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/b8295e0f/1.jpg" alt="所校验文件的MD5"></p>
-<p>红框内为所校验文件的MD5</p>
-]]></content>
+      <tags>
+        <tag>Github</tag>
+        <tag>学生优惠</tag>
+        <tag>开发者包</tag>
+      </tags>
   </entry>
   <entry>
     <title>MacOs下将Hexo部署到Github Pages</title>
@@ -73,6 +60,34 @@
 <h2 id="四、将本地内容上传到github"><a href="#四、将本地内容上传到github" class="headerlink" title="四、将本地内容上传到github"></a>四、将本地内容上传到github</h2><p>终端进入网站目录，并输入以下命令。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+        <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac下校验文件的MD5</title>
+    <url>/posts/b8295e0f.html</url>
+    <content><![CDATA[<p>为了避免文件在传输过程中损坏或被恶意篡改，我们可以校验下载后文件的MD5，与提供的MD5对比。若两者不一致，则该文件损坏或已被修改。</p>
+<span id="more"></span>
+
+<p>1、打开终端。</p>
+<p>2、在终端内输入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">md5 [文件路径]</span><br></pre></td></tr></table></figure>
+
+<div class="admonition note"><p>文件路径可通过拖拽文件至终端内获得。</p>
+</div>
+
+<p>3、输入回车，等待结果。（若文件较大可能校验时间更久）</p>
+<p><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/b8295e0f/1.jpg" alt="所校验文件的MD5"></p>
+<p>红框内为所校验文件的MD5</p>
+]]></content>
+      <tags>
+        <tag>md5</tag>
+        <tag>MacOs</tag>
+      </tags>
   </entry>
   <entry>
     <title>使用Netlify免费加速GitHub Pages页面</title>
@@ -83,5 +98,11 @@
 <p>首先，打开<a href="https://www.netlify.com/">Netlify</a>。点击sign up，并使用Github注册。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/2.png" alt="注册填写信息"><br>填写好基本的信息，并点击Set up and continue进入下一步。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/3.png" alt="点击Import from Git"><br>点击Import from Git从Git库中添加现有项目，进入GitHub授权界面。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/4.png" alt="授权界面"><br>在授权界面选择Only select repositories并选中要继续的库，选好后点击install。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/5.png" alt="选择库，并选择Branch"><br>接下来选中要使用Netlify的库，并选择Branch。选好后点击Deploy site。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/6.png" alt="Netlify管理后台"><br>接下来就进入到了Netlify的后台界面，依次点击Site settings→General→site details→change site name修改网站名称（也可以不修改），例如我的就是zmyu.netlify.app。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/7.png" alt="添加自定义域名"><br>进入到以上界面，并点击Add domain alias添加自定义域名，例如我的就是blog.zmyu.cc。<br><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/8.png"></p>
 <p><img src="https://blog.zmyu.cc/images/loading.gif" data-original="/posts/773db5f0/9.png" alt="DNS后台"><br>进入DNS后台，并添加CNAME记录，记录值就是之前修改的域名（或默认的域名），例如我的就是zmyu.netlify.app。<br>设置好之后，等待一段时间后，就可以通过自定义的域名访问网站了。</p>
 ]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+        <tag>Netlify</tag>
+        <tag>SEO</tag>
+      </tags>
   </entry>
 </search>
