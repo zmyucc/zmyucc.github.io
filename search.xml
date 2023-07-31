@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GitHub学生开发者包申请攻略</title>
+    <url>/posts/f8c9fa9d.html</url>
+    <content><![CDATA[<h3 id="1、进入申请页面"><a href="#1、进入申请页面" class="headerlink" title="1、进入申请页面"></a>1、进入申请页面</h3><p>进入<a href="https://education.github.com/pack">GitHub Student Developer Pack</a>，点击绿色的Sign up for Student Developer Pack 注册学生开发者包，随后点击Get student benefits进入填写验证材料的页面。</p>
+<div class="admonition note"><p>1、如果浏览器需要位置信息权限，则一定要允许。
+2、申请时将VPN关闭。</p>
+</div>
+
+<span id="more"></span>
+
+<p><img src="/posts/f8c9fa9d/1.jpg" alt="注册步骤"></p>
+<h3 id="2、填写验证信息"><a href="#2、填写验证信息" class="headerlink" title="2、填写验证信息"></a>2、填写验证信息</h3><p><img src="/posts/f8c9fa9d/2.png" alt="信息填写页面"></p>
+<p>E-mail处最好填写学校的edu邮箱，如果没有也可使用私人邮箱。想要绑定新的校园邮箱，可点击Add an email address并根据提示进行添加。</p>
+<p>What is the name of your school：用英文输入学校的全名，并选择弹出的选项。如果下拉选项中没有你的学校，则使用英文输入学校全名并进行下一步。</p>
+<p>How do you plan to use GitHub?：用英文输入申请的目的。（例如：I use GitHub for study）</p>
+<p>以上内容填写并检查好后点击Continue进行下一步。</p>
+<h3 id="3、上传学生身份证明"><a href="#3、上传学生身份证明" class="headerlink" title="3、上传学生身份证明"></a>3、上传学生身份证明</h3><p>准备好学生卡、学生证以及学信网的验证报告。</p>
+<p><img src="/posts/f8c9fa9d/3.png" alt="身份证明"></p>
+<p>将照片放入Word中整理好并附上英文说明，如上图所示。英文说明可以参考上图，着重写出这些文件的有效期。</p>
+<p>如果你不能通过上传的方式验证，那么需要将本页打印出，并通过摄像头拍摄。</p>
+<p>本页填写好确认无误后，点击Process my application提交。</p>
+<h3 id="4、通过申请"><a href="#4、通过申请" class="headerlink" title="4、通过申请"></a>4、通过申请</h3><p>提交后，可能会立即收到通过邮件，否则会在几天内收到邮件。</p>
+<p><img src="/posts/f8c9fa9d/4.png" alt="通过验证"></p>
+<p>如果未通过，则确定好填写的信息和证明文件的清晰度，多提交几次，一般就可以通过了。</p>
+]]></content>
+      <tags>
+        <tag>Github</tag>
+        <tag>学生优惠</tag>
+        <tag>开发者包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MacOs下将Hexo部署到Github Pages</title>
     <url>/posts/d37d0038.html</url>
     <content><![CDATA[<p><a href="hexo.io">Hexo</a>是一个快速、简洁且高效的博客框架。得益于Node.js的快速生成速度，几百个网页可在几秒钟内生成。<br>Hexo支持Markdown的所有功能，只需一条指令即可部署成功。</p>
@@ -30,8 +61,8 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
         <tag>Github</tag>
+        <tag>Hexo</tag>
         <tag>Github Pages</tag>
         <tag>MacOS</tag>
       </tags>
@@ -56,37 +87,6 @@
       <tags>
         <tag>md5</tag>
         <tag>MacOs</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub学生开发者包申请攻略</title>
-    <url>/posts/f8c9fa9d.html</url>
-    <content><![CDATA[<h3 id="1、进入申请页面"><a href="#1、进入申请页面" class="headerlink" title="1、进入申请页面"></a>1、进入申请页面</h3><p>进入<a href="https://education.github.com/pack">GitHub Student Developer Pack</a>，点击绿色的Sign up for Student Developer Pack 注册学生开发者包，随后点击Get student benefits进入填写验证材料的页面。</p>
-<div class="admonition note"><p>1、如果浏览器需要位置信息权限，则一定要允许。
-2、申请时将VPN关闭。</p>
-</div>
-
-<span id="more"></span>
-
-<p><img src="/posts/f8c9fa9d/1.jpg" alt="注册步骤"></p>
-<h3 id="2、填写验证信息"><a href="#2、填写验证信息" class="headerlink" title="2、填写验证信息"></a>2、填写验证信息</h3><p><img src="/posts/f8c9fa9d/2.png" alt="信息填写页面"></p>
-<p>E-mail处最好填写学校的edu邮箱，如果没有也可使用私人邮箱。想要绑定新的校园邮箱，可点击Add an email address并根据提示进行添加。</p>
-<p>What is the name of your school：用英文输入学校的全名，并选择弹出的选项。如果下拉选项中没有你的学校，则使用英文输入学校全名并进行下一步。</p>
-<p>How do you plan to use GitHub?：用英文输入申请的目的。（例如：I use GitHub for study）</p>
-<p>以上内容填写并检查好后点击Continue进行下一步。</p>
-<h3 id="3、上传学生身份证明"><a href="#3、上传学生身份证明" class="headerlink" title="3、上传学生身份证明"></a>3、上传学生身份证明</h3><p>准备好学生卡、学生证以及学信网的验证报告。</p>
-<p><img src="/posts/f8c9fa9d/3.png" alt="身份证明"></p>
-<p>将照片放入Word中整理好并附上英文说明，如上图所示。英文说明可以参考上图，着重写出这些文件的有效期。</p>
-<p>如果你不能通过上传的方式验证，那么需要将本页打印出，并通过摄像头拍摄。</p>
-<p>本页填写好确认无误后，点击Process my application提交。</p>
-<h3 id="4、通过申请"><a href="#4、通过申请" class="headerlink" title="4、通过申请"></a>4、通过申请</h3><p>提交后，可能会立即收到通过邮件，否则会在几天内收到邮件。</p>
-<p><img src="/posts/f8c9fa9d/4.png" alt="通过验证"></p>
-<p>如果未通过，则确定好填写的信息和证明文件的清晰度，多提交几次，一般就可以通过了。</p>
-]]></content>
-      <tags>
-        <tag>Github</tag>
-        <tag>学生优惠</tag>
-        <tag>开发者包</tag>
       </tags>
   </entry>
   <entry>
