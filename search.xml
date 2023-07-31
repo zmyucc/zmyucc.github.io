@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Mac下校验文件的MD5</title>
-    <url>/posts/b8295e0f.html</url>
-    <content><![CDATA[<p>为了避免文件在传输过程中损坏或被恶意篡改，我们可以校验下载后文件的MD5，与提供的MD5对比。若两者不一致，则该文件损坏或已被修改。</p>
-<span id="more"></span>
-
-<p>1、打开终端。</p>
-<p>2、在终端内输入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">md5 [文件路径]</span><br></pre></td></tr></table></figure>
-
-<div class="admonition note"><p>文件路径可通过拖拽文件至终端内获得。</p>
-</div>
-
-<p>3、输入回车，等待结果。（若文件较大可能校验时间更久）</p>
-<p><img src="/posts/b8295e0f/1.jpg" alt="所校验文件的MD5"></p>
-<p>红框内为所校验文件的MD5</p>
-]]></content>
-      <tags>
-        <tag>md5</tag>
-        <tag>MacOs</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MacOs下将Hexo部署到Github Pages</title>
     <url>/posts/d37d0038.html</url>
     <content><![CDATA[<p><a href="hexo.io">Hexo</a>是一个快速、简洁且高效的博客框架。得益于Node.js的快速生成速度，几百个网页可在几秒钟内生成。<br>Hexo支持Markdown的所有功能，只需一条指令即可部署成功。</p>
@@ -56,6 +34,28 @@
         <tag>Github</tag>
         <tag>Github Pages</tag>
         <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac下校验文件的MD5</title>
+    <url>/posts/b8295e0f.html</url>
+    <content><![CDATA[<p>为了避免文件在传输过程中损坏或被恶意篡改，我们可以校验下载后文件的MD5，与提供的MD5对比。若两者不一致，则该文件损坏或已被修改。</p>
+<span id="more"></span>
+
+<p>1、打开终端。</p>
+<p>2、在终端内输入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">md5 [文件路径]</span><br></pre></td></tr></table></figure>
+
+<div class="admonition note"><p>文件路径可通过拖拽文件至终端内获得。</p>
+</div>
+
+<p>3、输入回车，等待结果。（若文件较大可能校验时间更久）</p>
+<p><img src="/posts/b8295e0f/1.jpg" alt="所校验文件的MD5"></p>
+<p>红框内为所校验文件的MD5</p>
+]]></content>
+      <tags>
+        <tag>md5</tag>
+        <tag>MacOs</tag>
       </tags>
   </entry>
   <entry>
