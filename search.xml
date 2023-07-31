@@ -68,22 +68,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用Netlify免费加速GitHub Pages页面</title>
-    <url>/posts/773db5f0.html</url>
-    <content><![CDATA[<p>我们在使用Github Pages时会发现其在国内的访问速度非常缓慢，这无疑会影响页面的收录和访客的体验。本文介绍了如何加速Github Pages在国内的速度。</p>
-<span id="more"></span>
-<p>以下是使用Netlify加速后的访问速度。<br><img src="/posts/773db5f0/1.png" alt="加速后的访问速度"><br>可以看到加速后的页面在国内的访问速度是不错的。</p>
-<p>首先，打开<a href="https://www.netlify.com/">Netlify</a>。点击sign up，并使用Github注册。<br><img src="/posts/773db5f0/2.png" alt="注册填写信息"><br>填写好基本的信息，并点击Set up and continue进入下一步。<br><img src="/posts/773db5f0/3.png" alt="点击Import from Git"><br>点击Import from Git从Git库中添加现有项目，进入GitHub授权界面。<br><img src="/posts/773db5f0/4.png" alt="授权界面"><br>在授权界面选择Only select repositories并选中要继续的库，选好后点击install。<br><img src="/posts/773db5f0/5.png" alt="选择库，并选择Branch"><br>接下来选中要使用Netlify的库，并选择Branch。选好后点击Deploy site。<br><img src="/posts/773db5f0/6.png" alt="Netlify管理后台"><br>接下来就进入到了Netlify的后台界面，依次点击Site settings→General→site details→change site name修改网站名称（也可以不修改），例如我的就是zmyu.netlify.app。<br><img src="/posts/773db5f0/7.png" alt="添加自定义域名"><br>进入到以上界面，并点击Add domain alias添加自定义域名，例如我的就是blog.zmyu.cc。<br><img src="/posts/773db5f0/8.png"></p>
-<p><img src="/posts/773db5f0/9.png" alt="DNS后台"><br>进入DNS后台，并添加CNAME记录，记录值就是之前修改的域名（或默认的域名），例如我的就是zmyu.netlify.app。<br>设置好之后，等待一段时间后，就可以通过自定义的域名访问网站了。</p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github Pages</tag>
-        <tag>Netlify</tag>
-        <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac下校验文件的MD5</title>
     <url>/posts/b8295e0f.html</url>
     <content><![CDATA[<p>为了避免文件在传输过程中损坏或被恶意篡改，我们可以校验下载后文件的MD5，与提供的MD5对比。若两者不一致，则该文件损坏或已被修改。</p>
@@ -103,6 +87,22 @@
       <tags>
         <tag>md5</tag>
         <tag>MacOs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Netlify免费加速GitHub Pages页面</title>
+    <url>/posts/773db5f0.html</url>
+    <content><![CDATA[<p>我们在使用Github Pages时会发现其在国内的访问速度非常缓慢，这无疑会影响页面的收录和访客的体验。本文介绍了如何加速Github Pages在国内的速度。</p>
+<span id="more"></span>
+<p>以下是使用Netlify加速后的访问速度。<br><img src="/posts/773db5f0/1.png" alt="加速后的访问速度"><br>可以看到加速后的页面在国内的访问速度是不错的。</p>
+<p>首先，打开<a href="https://www.netlify.com/">Netlify</a>。点击sign up，并使用Github注册。<br><img src="/posts/773db5f0/2.png" alt="注册填写信息"><br>填写好基本的信息，并点击Set up and continue进入下一步。<br><img src="/posts/773db5f0/3.png" alt="点击Import from Git"><br>点击Import from Git从Git库中添加现有项目，进入GitHub授权界面。<br><img src="/posts/773db5f0/4.png" alt="授权界面"><br>在授权界面选择Only select repositories并选中要继续的库，选好后点击install。<br><img src="/posts/773db5f0/5.png" alt="选择库，并选择Branch"><br>接下来选中要使用Netlify的库，并选择Branch。选好后点击Deploy site。<br><img src="/posts/773db5f0/6.png" alt="Netlify管理后台"><br>接下来就进入到了Netlify的后台界面，依次点击Site settings→General→site details→change site name修改网站名称（也可以不修改），例如我的就是zmyu.netlify.app。<br><img src="/posts/773db5f0/7.png" alt="添加自定义域名"><br>进入到以上界面，并点击Add domain alias添加自定义域名，例如我的就是blog.zmyu.cc。<br><img src="/posts/773db5f0/8.png"></p>
+<p><img src="/posts/773db5f0/9.png" alt="DNS后台"><br>进入DNS后台，并添加CNAME记录，记录值就是之前修改的域名（或默认的域名），例如我的就是zmyu.netlify.app。<br>设置好之后，等待一段时间后，就可以通过自定义的域名访问网站了。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+        <tag>Netlify</tag>
+        <tag>SEO</tag>
       </tags>
   </entry>
 </search>
