@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GitHub学生开发者包申请攻略</title>
+    <url>/posts/f8c9fa9d.html</url>
+    <content><![CDATA[<h3 id="1、进入申请页面"><a href="#1、进入申请页面" class="headerlink" title="1、进入申请页面"></a>1、进入申请页面</h3><p>进入<a href="https://education.github.com/pack">GitHub Student Developer Pack</a>，点击绿色的Sign up for Student Developer Pack 注册学生开发者包，随后点击Get student benefits进入填写验证材料的页面。</p>
+<div class="admonition note"><p>1、如果浏览器需要位置信息权限，则一定要允许。
+2、申请时将VPN关闭。</p>
+</div>
+
+<span id="more"></span>
+
+<p><img src="/posts/f8c9fa9d/1.jpg" alt="注册步骤"></p>
+<h3 id="2、填写验证信息"><a href="#2、填写验证信息" class="headerlink" title="2、填写验证信息"></a>2、填写验证信息</h3><p><img src="/posts/f8c9fa9d/2.png" alt="信息填写页面"></p>
+<p>E-mail处最好填写学校的edu邮箱，如果没有也可使用私人邮箱。想要绑定新的校园邮箱，可点击Add an email address并根据提示进行添加。</p>
+<p>What is the name of your school：用英文输入学校的全名，并选择弹出的选项。如果下拉选项中没有你的学校，则使用英文输入学校全名并进行下一步。</p>
+<p>How do you plan to use GitHub?：用英文输入申请的目的。（例如：I use GitHub for study）</p>
+<p>以上内容填写并检查好后点击Continue进行下一步。</p>
+<h3 id="3、上传学生身份证明"><a href="#3、上传学生身份证明" class="headerlink" title="3、上传学生身份证明"></a>3、上传学生身份证明</h3><p>准备好学生卡、学生证以及学信网的验证报告。</p>
+<p><img src="/posts/f8c9fa9d/3.png" alt="身份证明"></p>
+<p>将照片放入Word中整理好并附上英文说明，如上图所示。英文说明可以参考上图，着重写出这些文件的有效期。</p>
+<p>如果你不能通过上传的方式验证，那么需要将本页打印出，并通过摄像头拍摄。</p>
+<p>本页填写好确认无误后，点击Process my application提交。</p>
+<h3 id="4、通过申请"><a href="#4、通过申请" class="headerlink" title="4、通过申请"></a>4、通过申请</h3><p>提交后，可能会立即收到通过邮件，否则会在几天内收到邮件。</p>
+<p><img src="/posts/f8c9fa9d/4.png" alt="通过验证"></p>
+<p>如果未通过，则确定好填写的信息和证明文件的清晰度，多提交几次，一般就可以通过了。</p>
+]]></content>
+      <tags>
+        <tag>Github</tag>
+        <tag>学生优惠</tag>
+        <tag>开发者包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MacOs下将Hexo部署到Github Pages</title>
     <url>/posts/d37d0038.html</url>
     <content><![CDATA[<p><a href="hexo.io">Hexo</a>是一个快速、简洁且高效的博客框架。得益于Node.js的快速生成速度，几百个网页可在几秒钟内生成。<br>Hexo支持Markdown的所有功能，只需一条指令即可部署成功。</p>
@@ -30,41 +61,10 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
         <tag>Github</tag>
+        <tag>Hexo</tag>
         <tag>Github Pages</tag>
         <tag>MacOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub学生开发者包申请攻略</title>
-    <url>/posts/f8c9fa9d.html</url>
-    <content><![CDATA[<h3 id="1、进入申请页面"><a href="#1、进入申请页面" class="headerlink" title="1、进入申请页面"></a>1、进入申请页面</h3><p>进入<a href="https://education.github.com/pack">GitHub Student Developer Pack</a>，点击绿色的Sign up for Student Developer Pack 注册学生开发者包，随后点击Get student benefits进入填写验证材料的页面。</p>
-<div class="admonition note"><p>1、如果浏览器需要位置信息权限，则一定要允许。
-2、申请时将VPN关闭。</p>
-</div>
-
-<span id="more"></span>
-
-<p><img src="/posts/f8c9fa9d/1.jpg" alt="注册步骤"></p>
-<h3 id="2、填写验证信息"><a href="#2、填写验证信息" class="headerlink" title="2、填写验证信息"></a>2、填写验证信息</h3><p><img src="/posts/f8c9fa9d/2.png" alt="信息填写页面"></p>
-<p>E-mail处最好填写学校的edu邮箱，如果没有也可使用私人邮箱。想要绑定新的校园邮箱，可点击Add an email address并根据提示进行添加。</p>
-<p>What is the name of your school：用英文输入学校的全名，并选择弹出的选项。如果下拉选项中没有你的学校，则使用英文输入学校全名并进行下一步。</p>
-<p>How do you plan to use GitHub?：用英文输入申请的目的。（例如：I use GitHub for study）</p>
-<p>以上内容填写并检查好后点击Continue进行下一步。</p>
-<h3 id="3、上传学生身份证明"><a href="#3、上传学生身份证明" class="headerlink" title="3、上传学生身份证明"></a>3、上传学生身份证明</h3><p>准备好学生卡、学生证以及学信网的验证报告。</p>
-<p><img src="/posts/f8c9fa9d/3.png" alt="身份证明"></p>
-<p>将照片放入Word中整理好并附上英文说明，如上图所示。英文说明可以参考上图，着重写出这些文件的有效期。</p>
-<p>如果你不能通过上传的方式验证，那么需要将本页打印出，并通过摄像头拍摄。</p>
-<p>本页填写好确认无误后，点击Process my application提交。</p>
-<h3 id="4、通过申请"><a href="#4、通过申请" class="headerlink" title="4、通过申请"></a>4、通过申请</h3><p>提交后，可能会立即收到通过邮件，否则会在几天内收到邮件。</p>
-<p><img src="/posts/f8c9fa9d/4.png" alt="通过验证"></p>
-<p>如果未通过，则确定好填写的信息和证明文件的清晰度，多提交几次，一般就可以通过了。</p>
-]]></content>
-      <tags>
-        <tag>Github</tag>
-        <tag>学生优惠</tag>
-        <tag>开发者包</tag>
       </tags>
   </entry>
   <entry>
@@ -103,6 +103,37 @@
         <tag>Github Pages</tag>
         <tag>Netlify</tag>
         <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初识C语言（一)</title>
+    <url>/posts/d87f7e0c.html</url>
+    <content><![CDATA[<h3 id="hello-world-include、printf、return"><a href="#hello-world-include、printf、return" class="headerlink" title="hello world-include、printf、return"></a>hello world-include、printf、return</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;hello world!\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p><code>#include &lt;stdio.h&gt;</code>表示包含一个叫stdio.h的文件。<br>stdio就是standard input output的缩写。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>return 0;</code>与<code>int</code>函数呼应，<code>int main()</code>表示要求返回一个整型，而0就是这个整型。</p>
+<p><code>printf(&quot;hello world!\n&quot;);</code>表示在屏幕上打印东西，函数printf，就是print function的缩写，是库函数，即C语言本身提供给我们的函数。后面的<code>\n</code>表示换行。</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    char ch = &#x27;a&#x27;;//存到内存里</span><br><span class="line">    printf(&quot;%c\n&quot;,ch);//%c-打印字符型数据</span><br><span class="line">    //int 整型</span><br><span class="line">    int age = 20;//定义一个整型数据age</span><br><span class="line">    printf(&quot;%d\n&quot;,age);//%d-打印整型十进制数据</span><br><span class="line">    //long 长整型</span><br><span class="line">    long num = 100000000000;</span><br><span class="line">    printf(&quot;%ld\n&quot;,num);</span><br><span class="line">    float f = 5.0;</span><br><span class="line">    printf(&quot;%f\n&quot;,f);</span><br><span class="line">    //返回不同类型的字符占用内存大小。</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(char));</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(short));</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(int));</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(long)); //返回的字节可能是4或8</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(long long));</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(float));</span><br><span class="line">    printf(&quot;%d\n&quot;,sizeof(double));</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>char</code>  表示字符数据类型  打印用<code>%c</code></p>
+<p><code>short</code> 短整型(short int) ,2字节<br><code>int</code> 整型，4字节<br><code>long</code> 长整型，根据不同规定，8字节或4字节<br><code>long long</code> 更长的整型，8字节<br>打印上面四个用<code>%d</code></p>
+<p><code>float</code> 单精度浮点数，4字节<br><code>double</code> 双精度浮点数，8字节<br>打印用<code>%f</code></p>
+<p><code>%d</code>打印整型<br><code>%c</code>打印字符<br><code>%f</code>打印浮点数-打小数<br><code>%p</code>以地址的形式打印<br><code>%x</code>打印16进制数字</p>
+<p><code>char ch = &#39;a&#39;;</code>表示定义一个字符型数据ch，就是a<br><code>printf(&quot;%c\n&quot;,ch);</code>%c表示打印字符型数据ch</p>
+<p><code>printf(&quot;%d\n&quot;,age);</code>%d表示打印整型十进制数据age</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int age()</span><br><span class="line">&#123;</span><br><span class="line">    //年龄</span><br><span class="line">    //20</span><br><span class="line">   short age = 20; //向内存申请2个字节，16bit位，用来存放20</span><br><span class="line">   float weight = 95.6;//向内存申请4个字节，32bit位，用来存放小数，小数必须用浮点数</span><br><span class="line">   return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>小数必须用浮点数。</p>
+<h3 id="两个数相加-scanf"><a href="#两个数相加-scanf" class="headerlink" title="两个数相加-scanf"></a>两个数相加-scanf</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    //计算连个数的和</span><br><span class="line">    int a = 0;</span><br><span class="line">    int b = 0;</span><br><span class="line">    int sum = 0;</span><br><span class="line">    //c语言语法规定，变量要定义在当前代码块的最前面</span><br><span class="line">    //输入数据用scanf</span><br><span class="line">    scanf(&quot;%d%d&quot;,&amp;a,&amp;b);//&amp;符号是取地址的意思</span><br><span class="line">    sum = a + b;</span><br><span class="line">    printf(&quot;%d\n&quot;,sum);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>c语言语法规定，变量要定义在当前代码块的最前面。<br><code>scanf(&quot;%d%d&quot;,&amp;a,&amp;b);</code><br>输入数据用<code>scanf</code>，<code>&amp;</code>符号是取地址的意思。<br>这句话表述输入两个整型变量a和b。</p>
+<h3 id="变量、常量、全局变量、局部变量"><a href="#变量、常量、全局变量、局部变量" class="headerlink" title="变量、常量、全局变量、局部变量"></a>变量、常量、全局变量、局部变量</h3><p>不变的量就是常量，变的量就是变量。<br>变量分为局部变量和全局变量，局部变量和全局变量名字建议不要相同，相同局部优先。局部变量只能在大括号内部使用。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int num1 = 10;//num1是全局变量-定义在代码块括号外</span><br><span class="line">int main() &#123;</span><br><span class="line">//定义变量的方式</span><br><span class="line">    int age = 150;</span><br><span class="line">    float weight = 99.9;</span><br><span class="line">    char ch = &#x27;w&#x27;;</span><br><span class="line">//变量分为局部变量和全局变量</span><br><span class="line">    int num2 = 20;//num2是局部变量-定义在代码块括号内</span><br><span class="line">    int num1 = 30;</span><br><span class="line">    printf(&quot;%d\n&quot;,num1);//局部变量和全局变量名字建议不要相同，相同局部优先。所以打印出30。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>局部变量和全局变量名字建议不要相同，相同局部优先。所以打印出30。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    &#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d\n&quot;,a);//不会打印出10，因为局部变量只能在大括号内部使用</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>C</tag>
       </tags>
   </entry>
 </search>
