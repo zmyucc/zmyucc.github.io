@@ -1,3 +1,4 @@
+https://blog.zmyu.cc/posts/9eda039f.html
 https://blog.zmyu.cc/posts/d87f7e0c.html
 https://blog.zmyu.cc/posts/d37d0038.html
 https://blog.zmyu.cc/posts/b8295e0f.html
@@ -14,6 +15,6 @@ https://blog.zmyu.cc/tags/Github-Pages/
 https://blog.zmyu.cc/tags/MacOS/
 https://blog.zmyu.cc/tags/md5/
 https://blog.zmyu.cc/tags/MacOs/
+https://blog.zmyu.cc/tags/C/
 https://blog.zmyu.cc/tags/Netlify/
 https://blog.zmyu.cc/tags/SEO/
-https://blog.zmyu.cc/tags/C/

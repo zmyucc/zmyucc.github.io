@@ -90,22 +90,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用Netlify免费加速GitHub Pages页面</title>
-    <url>/posts/773db5f0.html</url>
-    <content><![CDATA[<p>我们在使用Github Pages时会发现其在国内的访问速度非常缓慢，这无疑会影响页面的收录和访客的体验。本文介绍了如何加速Github Pages在国内的速度。</p>
-<span id="more"></span>
-<p>以下是使用Netlify加速后的访问速度。<br><img src="/posts/773db5f0/1.png" alt="加速后的访问速度"><br>可以看到加速后的页面在国内的访问速度是不错的。</p>
-<p>首先，打开<a href="https://www.netlify.com/">Netlify</a>。点击sign up，并使用Github注册。<br><img src="/posts/773db5f0/2.png" alt="注册填写信息"><br>填写好基本的信息，并点击Set up and continue进入下一步。<br><img src="/posts/773db5f0/3.png" alt="点击Import from Git"><br>点击Import from Git从Git库中添加现有项目，进入GitHub授权界面。<br><img src="/posts/773db5f0/4.png" alt="授权界面"><br>在授权界面选择Only select repositories并选中要继续的库，选好后点击install。<br><img src="/posts/773db5f0/5.png" alt="选择库，并选择Branch"><br>接下来选中要使用Netlify的库，并选择Branch。选好后点击Deploy site。<br><img src="/posts/773db5f0/6.png" alt="Netlify管理后台"><br>接下来就进入到了Netlify的后台界面，依次点击Site settings→General→site details→change site name修改网站名称（也可以不修改），例如我的就是zmyu.netlify.app。<br><img src="/posts/773db5f0/7.png" alt="添加自定义域名"><br>进入到以上界面，并点击Add domain alias添加自定义域名，例如我的就是blog.zmyu.cc。<br><img src="/posts/773db5f0/8.png"></p>
-<p><img src="/posts/773db5f0/9.png" alt="DNS后台"><br>进入DNS后台，并添加CNAME记录，记录值就是之前修改的域名（或默认的域名），例如我的就是zmyu.netlify.app。<br>设置好之后，等待一段时间后，就可以通过自定义的域名访问网站了。</p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github Pages</tag>
-        <tag>Netlify</tag>
-        <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>初识C语言（一)</title>
     <url>/posts/d87f7e0c.html</url>
     <content><![CDATA[<h3 id="hello-world-include、printf、return"><a href="#hello-world-include、printf、return" class="headerlink" title="hello world-include、printf、return"></a>hello world-include、printf、return</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;hello world!\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -131,6 +115,63 @@
 
 <p>局部变量和全局变量名字建议不要相同，相同局部优先。所以打印出30。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    &#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d\n&quot;,a);//不会打印出10，因为局部变量只能在大括号内部使用</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Netlify免费加速GitHub Pages页面</title>
+    <url>/posts/773db5f0.html</url>
+    <content><![CDATA[<p>我们在使用Github Pages时会发现其在国内的访问速度非常缓慢，这无疑会影响页面的收录和访客的体验。本文介绍了如何加速Github Pages在国内的速度。</p>
+<span id="more"></span>
+<p>以下是使用Netlify加速后的访问速度。<br><img src="/posts/773db5f0/1.png" alt="加速后的访问速度"><br>可以看到加速后的页面在国内的访问速度是不错的。</p>
+<p>首先，打开<a href="https://www.netlify.com/">Netlify</a>。点击sign up，并使用Github注册。<br><img src="/posts/773db5f0/2.png" alt="注册填写信息"><br>填写好基本的信息，并点击Set up and continue进入下一步。<br><img src="/posts/773db5f0/3.png" alt="点击Import from Git"><br>点击Import from Git从Git库中添加现有项目，进入GitHub授权界面。<br><img src="/posts/773db5f0/4.png" alt="授权界面"><br>在授权界面选择Only select repositories并选中要继续的库，选好后点击install。<br><img src="/posts/773db5f0/5.png" alt="选择库，并选择Branch"><br>接下来选中要使用Netlify的库，并选择Branch。选好后点击Deploy site。<br><img src="/posts/773db5f0/6.png" alt="Netlify管理后台"><br>接下来就进入到了Netlify的后台界面，依次点击Site settings→General→site details→change site name修改网站名称（也可以不修改），例如我的就是zmyu.netlify.app。<br><img src="/posts/773db5f0/7.png" alt="添加自定义域名"><br>进入到以上界面，并点击Add domain alias添加自定义域名，例如我的就是blog.zmyu.cc。<br><img src="/posts/773db5f0/8.png"></p>
+<p><img src="/posts/773db5f0/9.png" alt="DNS后台"><br>进入DNS后台，并添加CNAME记录，记录值就是之前修改的域名（或默认的域名），例如我的就是zmyu.netlify.app。<br>设置好之后，等待一段时间后，就可以通过自定义的域名访问网站了。</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+        <tag>Netlify</tag>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初识C语言（二）</title>
+    <url>/posts/9eda039f.html</url>
+    <content><![CDATA[<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串，由双引号引起来的一串字符，称为字符串字面值，或者简称字符串。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    &quot;abcdef&quot;;</span><br><span class="line">    &quot;hello&quot;;</span><br><span class="line">    &quot;&quot;;//空字符串</span><br><span class="line">    //上面三个都是字符串。</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p><code>&quot;&quot;;</code>代表空字符串</p>
+<p>字符串的结束标志是一个<code>\0</code>的转义字符。在计算字符串长度的时候<code>\0</code>是结束标志，不算做字符串的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    char arr1[] = &quot;abc&quot;;</span><br><span class="line">    char arr2[] = &#123;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;&#125;;</span><br><span class="line">    printf(&quot;%d\n&quot;,strlen(arr1));//strlen-string length-用于计算字符串长度</span><br><span class="line">    printf(&quot;%d\n&quot;,strlen(arr2));</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">//输出结果是3和随机值</span><br></pre></td></tr></table></figure>
+<p><code>strlen</code>就是string length的缩写，用于计算字符串长度。</p>
+<p>arr1这个数列包括的内容就是<code>a</code>,<code>b</code>,<code>c</code>,<code>\0</code>，计算长度时，最后一个不计算，所以是字符串长度就是3。<br>arr2这个数列包括<code>a</code>,<code>b</code>,<code>c</code>，最后不是<code>\0</code>结尾。在计算长度时，一直找到<code>\0</code>为止，长度不确定是多少。</p>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>转义字符-把原来的意思转变了。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    printf(&quot;abc\n&quot;);//把\n的意思转变了，变成了换行。</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>printf(&quot;abc\n&quot;);</code>这里转义字符<code>\n</code>就是把n的意思变成了换行。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">    printf(&quot;c:\test\32\test.c&quot;);</span><br><span class="line">    //无法正常打印，因为\t是水平制表符，想要显示一个反斜杠，要输入\\，两个反斜杠</span><br><span class="line">    printf(&quot;c:\\test\\32\\test.c&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的例子看出，想要显示一个反斜杠，需要输入两个反斜杠就可以正常显示。</p>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p>C语言实现循环的方式：while、for、do…while等</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int a = 0;</span><br><span class="line">    while(a&lt;20000)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;a=%d\n&quot;,a);</span><br><span class="line">        a = a + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    if (a&gt;=20000) &#123;</span><br><span class="line">        printf(&quot;a&gt;=20000\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>while(a&lt;20000)&#123;……&#125;</code>的意思就是当a小于20000时，一直执行括号里的内容，直到a不再小于20000。</p>
+<h3 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h3><p>自定义函数,就是自己设计的函数，可以简化代码，复用代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//两数相加</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int Add(int x,int y)&#123;</span><br><span class="line">    int z = x + y;</span><br><span class="line">    return z;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int num1 = 10;</span><br><span class="line">    int num2 = 20;</span><br><span class="line">    int sum1 = 0;</span><br><span class="line">    int sum2 = 0;</span><br><span class="line">    int a = 100;</span><br><span class="line">    int b = 200;</span><br><span class="line">    sum1 = Add(num1,num2);</span><br><span class="line">    sum2 = Add(a,b);</span><br><span class="line">    printf(&quot;sum1 = %d\n&quot;,sum1);</span><br><span class="line">    printf(&quot;sum2 = %d\n&quot;,sum2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="选择语句-if"><a href="#选择语句-if" class="headerlink" title="选择语句 if"></a>选择语句 if</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int input = 0;</span><br><span class="line">    printf(&quot;输入1或0:&quot;);</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;input);</span><br><span class="line">    if (input == 1) &#123;</span><br><span class="line">        printf(&quot;输入的数是1\n&quot;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        printf(&quot;输入的数是0\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数据就是一组相同类型元素的集合，数组的下标从0开始，依次递增1。<br><code>int arr[10];</code>   定义一个存放10个整数数字的数组。<br><code>char ch[20];</code>    定义一个存放20个字符的数组。<br><code>float fl[20];</code>   定义一个存放20个浮点数的数组。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int arr[10] = &#123;1,2,3,4,5,6,7,8,9,10&#125;;//定义一个数组，最多放10个元素</span><br><span class="line">    int i = 0;</span><br><span class="line">    while (i&lt;10) &#123;</span><br><span class="line">        printf(&quot;%d,&quot;,arr[i]);</span><br><span class="line">        i = i + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的代码的功能是打印出arr这个数组的每个元素的内容。</p>
+<h3 id="常属性"><a href="#常属性" class="headerlink" title="常属性"></a>常属性</h3><p>const - 常属性，不能再更改数值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main() &#123;</span><br><span class="line">    const int num = 4;</span><br><span class="line">    printf(&quot;%d\n&quot;,num);</span><br><span class="line">    num = 8;//num不会等于8，因为num是常属性。</span><br><span class="line">    printf(&quot;%d\n&quot;,num);</span><br><span class="line">    const int n = 10;//n是变量，但是有常属性，所以我们说n是常变量，本质上是变量，使用常量时，不能用n。</span><br><span class="line">    int arr[10] = &#123;0&#125;;//arr里面不能写n，因为这里要写常量，n是变量。</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>const int n = 10;</code> n是变量，但是有常属性，所以我们说n是常变量，本质上是变量，使用常量时，不能用n。</p>
+<h3 id="标识符常量"><a href="#标识符常量" class="headerlink" title="标识符常量"></a>标识符常量</h3><p><code>#define</code>定义 标识符常量，例如<code>#define MAX 10</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#define MAX 10</span><br><span class="line">int define()</span><br><span class="line">&#123;</span><br><span class="line">    int arr[MAX] = &#123;0&#125;;</span><br><span class="line">    printf(&quot;%d\n&quot;,MAX);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="枚举常量"><a href="#枚举常量" class="headerlink" title="枚举常量"></a>枚举常量</h3><p>枚举，一一列举，比如性别，三原色、星期几等。<br>枚举关键字：<code>enum</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">enum Sex</span><br><span class="line">&#123;</span><br><span class="line">    MALE,</span><br><span class="line">    FEMALE,</span><br><span class="line">    SECRET</span><br><span class="line">&#125;;</span><br><span class="line">//上面的三个就是枚举常量</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    enum Sex s = FEMALE;</span><br><span class="line">    printf(&quot;%d\n&quot;,MALE);//0</span><br><span class="line">    printf(&quot;%d\n&quot;,FEMALE);//1</span><br><span class="line">    printf(&quot;%d\n&quot;,SECRET);//2</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>C</tag>
