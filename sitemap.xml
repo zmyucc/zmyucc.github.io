@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.zmyu.cc/posts/64e9b9a8.html</loc>
+    
+    <lastmod>2024-10-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.zmyu.cc/posts/d3c4a0cd.html</loc>
     
     <lastmod>2024-10-05</lastmod>
@@ -143,20 +152,6 @@
   </url>
   
   <url>
-    <loc>https://blog.zmyu.cc/tags/Netlify/</loc>
-    <lastmod>2024-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zmyu.cc/tags/SEO/</loc>
-    <lastmod>2024-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.zmyu.cc/tags/md5/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,6 +160,20 @@
   
   <url>
     <loc>https://blog.zmyu.cc/tags/MacOs/</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zmyu.cc/tags/Netlify/</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zmyu.cc/tags/SEO/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
