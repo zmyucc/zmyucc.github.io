@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.zmyu.cc/posts/6e4091aa.html</loc>
+    
+    <lastmod>2024-10-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.zmyu.cc/posts/852d9224.html</loc>
     
     <lastmod>2024-10-09</lastmod>
@@ -11,7 +20,25 @@
   </url>
   
   <url>
-    <loc>https://blog.zmyu.cc/posts/6e4091aa.html</loc>
+    <loc>https://blog.zmyu.cc/posts/509865fe.html</loc>
+    
+    <lastmod>2024-10-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zmyu.cc/posts/b9ca79e6.html</loc>
+    
+    <lastmod>2024-10-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.zmyu.cc/posts/1c3ae651.html</loc>
     
     <lastmod>2024-10-09</lastmod>
     
@@ -191,6 +218,13 @@
 
   
   <url>
+    <loc>https://blog.zmyu.cc/tags/C/</loc>
+    <lastmod>2024-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.zmyu.cc/tags/Github/</loc>
     <lastmod>2024-10-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -206,13 +240,6 @@
   
   <url>
     <loc>https://blog.zmyu.cc/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%8C%85/</loc>
-    <lastmod>2024-10-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.zmyu.cc/tags/C/</loc>
     <lastmod>2024-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
