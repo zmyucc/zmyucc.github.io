@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.zmyu.cc/posts/3537ed3a.html</loc>
+    
+    <lastmod>2024-11-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.zmyu.cc/posts/d9dca8c8.html</loc>
     
     <lastmod>2024-11-16</lastmod>
@@ -904,7 +913,7 @@
 
   <url>
     <loc>https://blog.zmyu.cc/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -912,91 +921,91 @@
   
   <url>
     <loc>https://blog.zmyu.cc/tags/C/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/Github/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%8C%85/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/Hexo/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/Github-Pages/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/MacOS/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/md5/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/MacOs/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/Netlify/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/SEO/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/%E4%BF%A1%E6%8D%B7/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.zmyu.cc/tags/PLC/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
