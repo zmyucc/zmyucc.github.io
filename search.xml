@@ -519,16 +519,16 @@
     <title>15-1FLASH闪存</title>
     <url>/posts/13146da8.html</url>
     <content><![CDATA[<h3 id="FLASH闪存"><a href="#FLASH闪存" class="headerlink" title="FLASH闪存"></a>FLASH闪存</h3><p>•STM32F1系列的FLASH包含程序存储器、系统存储器和选项字节三个部分，通过闪存存储器接口（外设）可以对程序存储器和选项字节进行擦除和编程<br>•读写FLASH的用途：<br>  利用程序存储器的剩余空间来保存掉电不丢失的用户数据<br>  通过在程序中编程（IAP），实现程序的自我更新<br>•在线编程（In-Circuit Programming – ICP）用于更新程序存储器的全部内容，它通过JTAG、SWD协议或系统加载程序（Bootloader）下载程序<br>•在程序中编程（In-Application Programming – IAP）可以使用微控制器支持的任一种通信接口下载程序</p>
-<h3 id="闪存模块组织"><a href="#闪存模块组织" class="headerlink" title="闪存模块组织"></a>闪存模块组织</h3><p><img src="/posts/undefined/1.png" alt="闪存模块组织"><br>主存储器，就是程序存储器。<br>启动程序代码，就是系统存储器。<br>用户选择字节，就是选项字节。<br>闪存存储器接口寄存器就是闪存的管理员，擦除和编程通过这些寄存器完成。</p>
-<h3 id="FLASH基本结构"><a href="#FLASH基本结构" class="headerlink" title="FLASH基本结构"></a>FLASH基本结构</h3><p><img src="/posts/undefined/2.png" alt="FLASH基本结构"></p>
+<h3 id="闪存模块组织"><a href="#闪存模块组织" class="headerlink" title="闪存模块组织"></a>闪存模块组织</h3><p><img src="/posts/13146da8/1.png" alt="闪存模块组织"><br>主存储器，就是程序存储器。<br>启动程序代码，就是系统存储器。<br>用户选择字节，就是选项字节。<br>闪存存储器接口寄存器就是闪存的管理员，擦除和编程通过这些寄存器完成。</p>
+<h3 id="FLASH基本结构"><a href="#FLASH基本结构" class="headerlink" title="FLASH基本结构"></a>FLASH基本结构</h3><p><img src="/posts/13146da8/2.png" alt="FLASH基本结构"></p>
 <h3 id="FLASH解锁"><a href="#FLASH解锁" class="headerlink" title="FLASH解锁"></a>FLASH解锁</h3><p>类似W25Q64的写使能，操作stm32的FLASH寄存器之前需要解锁，目的是为了防止误操作。</p>
 <p>•FPEC共有三个键值：<br>RDPRT键 &#x3D; 0x000000A5<br>KEY1 &#x3D; 0x45670123<br>KEY2 &#x3D; 0xCDEF89AB</p>
 <p>•解锁：<br>  复位后，FPEC被保护，不能写入FLASH_CR<br>  在FLASH_KEYR先写入KEY1，再写入KEY2，解锁<br>  错误的操作序列会在下次复位前锁死FPEC和FLASH_CR<br>•加锁：<br>  设置FLASH_CR中的LOCK位锁住FPEC和FLASH_CR</p>
 <h3 id="使用指针访问存储器"><a href="#使用指针访问存储器" class="headerlink" title="使用指针访问存储器"></a>使用指针访问存储器</h3><p>•使用指针读指定地址下的存储器：<br>  <code>uint16_t Data = *((__IO uint16_t *)(0x08000000));</code><br>•使用指针写指定地址下的存储器：<br>  <code>*((__IO uint16_t *)(0x08000000)) = 0x1234;</code><br>•其中：<br>  <code>#define    __IO    volatile</code></p>
-<h3 id="程序存储器编程"><a href="#程序存储器编程" class="headerlink" title="程序存储器编程"></a>程序存储器编程</h3><p><img src="/posts/undefined/3.png" alt="程序存储器编程"></p>
-<h3 id="程序存储器页擦除"><a href="#程序存储器页擦除" class="headerlink" title="程序存储器页擦除"></a>程序存储器页擦除</h3><p><img src="/posts/undefined/4.png" alt="程序存储器页擦除"></p>
-<h3 id="程序存储器全擦除"><a href="#程序存储器全擦除" class="headerlink" title="程序存储器全擦除"></a>程序存储器全擦除</h3><p><img src="/posts/undefined/5.png" alt="程序存储器全擦除"></p>
-<h3 id="选项字节"><a href="#选项字节" class="headerlink" title="选项字节"></a>选项字节</h3><p><img src="/posts/undefined/6.png" alt="选项字节"><br>•RDP：写入RDPRT键（0x000000A5）后解除读保护<br>•USER：配置硬件看门狗和进入停机&#x2F;待机模式是否产生复位<br>•Data0&#x2F;1：用户可自定义使用<br>•WRP0&#x2F;1&#x2F;2&#x2F;3：配置写保护，每一个位对应保护4个存储页（中容量）</p>
+<h3 id="程序存储器编程"><a href="#程序存储器编程" class="headerlink" title="程序存储器编程"></a>程序存储器编程</h3><p><img src="/posts/13146da8/3.png" alt="程序存储器编程"></p>
+<h3 id="程序存储器页擦除"><a href="#程序存储器页擦除" class="headerlink" title="程序存储器页擦除"></a>程序存储器页擦除</h3><p><img src="/posts/13146da8/4.png" alt="程序存储器页擦除"></p>
+<h3 id="程序存储器全擦除"><a href="#程序存储器全擦除" class="headerlink" title="程序存储器全擦除"></a>程序存储器全擦除</h3><p><img src="/posts/13146da8/5.png" alt="程序存储器全擦除"></p>
+<h3 id="选项字节"><a href="#选项字节" class="headerlink" title="选项字节"></a>选项字节</h3><p><img src="/posts/13146da8/6.png" alt="选项字节"><br>•RDP：写入RDPRT键（0x000000A5）后解除读保护<br>•USER：配置硬件看门狗和进入停机&#x2F;待机模式是否产生复位<br>•Data0&#x2F;1：用户可自定义使用<br>•WRP0&#x2F;1&#x2F;2&#x2F;3：配置写保护，每一个位对应保护4个存储页（中容量）</p>
 <h3 id="选项字节编程"><a href="#选项字节编程" class="headerlink" title="选项字节编程"></a>选项字节编程</h3><p>•检查FLASH_SR的BSY位，以确认没有其他正在进行的编程操作<br>•解锁FLASH_CR的OPTWRE位<br>•设置FLASH_CR的OPTPG位为1<br>•写入要编程的半字到指定的地址<br>•等待BSY位变为0<br>•读出写入的地址并验证数据</p>
 <h3 id="选项字节擦除"><a href="#选项字节擦除" class="headerlink" title="选项字节擦除"></a>选项字节擦除</h3><p>•检查FLASH_SR的BSY位，以确认没有其他正在进行的闪存操作<br>•解锁FLASH_CR的OPTWRE位<br>•设置FLASH_CR的OPTER位为1<br>•设置FLASH_CR的STRT位为1<br>•等待BSY位变为0<br>•读出被擦除的选择字节并做验证</p>
 <h3 id="器件电子签名"><a href="#器件电子签名" class="headerlink" title="器件电子签名"></a>器件电子签名</h3><p>•电子签名存放在闪存存储器模块的系统存储区域，包含的芯片识别信息在出厂时编写，不可更改，使用指针读指定地址下的存储器可获取电子签名<br>•闪存容量寄存器：<br>  基地址：0x1FFF F7E0<br>  大小：16位<br>•产品唯一身份标识寄存器：<br>  基地址： 0x1FFF F7E8<br>  大小：96位</p>
