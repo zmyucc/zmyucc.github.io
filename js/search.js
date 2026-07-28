@@ -30,7 +30,7 @@
     if (isLoading) return;
     isLoading = true;
 
-    results.innerHTML = '<div class="search-no-results">Loading search data...</div>';
+    results.innerHTML = '<div class="search-no-results">搜索数据加载中...</div>';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/search.xml', true);
@@ -47,7 +47,7 @@
     };
     xhr.onerror = function() {
       isLoading = false;
-      results.innerHTML = '<div class="search-no-results">Failed to load search data. Make sure hexo-generator-search is installed.</div>';
+      results.innerHTML = '<div class="search-no-results">搜索数据加载失败，请确保已安装 hexo-generator-search 插件。</div>';
     };
     xhr.send();
   }
@@ -73,7 +73,7 @@
 
   function doSearch(query) {
     if (!searchData) {
-      results.innerHTML = '<div class="search-no-results">Search data loading...</div>';
+      results.innerHTML = '<div class="search-no-results">搜索数据加载中...</div>';
       return;
     }
 
@@ -107,7 +107,7 @@
     matches.sort(function(a, b) { return b.score - a.score; });
 
     if (matches.length === 0) {
-      results.innerHTML = '<div class="search-no-results">No results found for "' + escapeHtml(query) + '"</div>';
+      results.innerHTML = '<div class="search-no-results">未找到与 "' + escapeHtml(query) + '" 相关的结果</div>';
       return;
     }
 
@@ -125,7 +125,7 @@
     html += '</ul>';
 
     // Show total count at the bottom
-    html += '<div class="search-more">' + matches.length + ' results found</div>';
+    html += '<div class="search-more">共找到 ' + matches.length + ' 条结果</div>';
 
     results.innerHTML = html;
   }
@@ -177,9 +177,12 @@
     // Lazy-load search data when overlay is first opened
     if (!searchData) {
       loadSearchData(function() {
-        // Re-trigger search if user has already typed something
+        // If user has already typed something, show results
         if (input.value.trim()) {
           doSearch(input.value);
+        } else {
+          // Show load completion message
+          results.innerHTML = '<div class="search-no-results">搜索数据加载完成，请输入关键词进行搜索</div>';
         }
       });
     }
