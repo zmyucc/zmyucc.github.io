@@ -1,4 +1,4 @@
-// Pure Theme - Local Search
+// Pure Theme - Local Search (lazy loaded with cache)
 (function() {
   'use strict';
 
@@ -10,17 +10,43 @@
   if (!overlay || !input || !results || !closeBtn) return;
 
   var searchData = null;
+  var isLoading = false;
+  var CACHE_KEY = 'pure-search-data';
 
-  // Load search.xml
-  function loadSearchData() {
+  // Load search.xml lazily with sessionStorage cache
+  function loadSearchData(callback) {
+    // Try cache first
+    try {
+      var cached = sessionStorage.getItem(CACHE_KEY);
+      if (cached) {
+        searchData = JSON.parse(cached);
+        callback();
+        return;
+      }
+    } catch (e) {
+      // sessionStorage unavailable or corrupted, proceed to fetch
+    }
+
+    if (isLoading) return;
+    isLoading = true;
+
+    results.innerHTML = '<div class="search-no-results">Loading search data...</div>';
+
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/search.xml', true);
     xhr.onload = function() {
+      isLoading = false;
       if (xhr.status === 200) {
         parseSearchData(xhr.responseXML);
+        // Cache in sessionStorage
+        try {
+          sessionStorage.setItem(CACHE_KEY, JSON.stringify(searchData));
+        } catch (e) {}
+        callback();
       }
     };
     xhr.onerror = function() {
+      isLoading = false;
       results.innerHTML = '<div class="search-no-results">Failed to load search data. Make sure hexo-generator-search is installed.</div>';
     };
     xhr.send();
@@ -86,7 +112,7 @@
     }
 
     var html = '<ul class="search-results-list">';
-    for (var j = 0; j < Math.min(matches.length, 20); j++) {
+    for (var j = 0; j < matches.length; j++) {
       var m = matches[j];
       var snippet = getSnippet(m.item.content, q, 120);
       var catHtml = m.item.categories ? '<span class="search-result-category">' + escapeHtml(m.item.categories) + '</span>' : '';
@@ -98,9 +124,8 @@
     }
     html += '</ul>';
 
-    if (matches.length > 20) {
-      html += '<div class="search-more">Showing top 20 of ' + matches.length + ' results. Refine your search for more.</div>';
-    }
+    // Show total count at the bottom
+    html += '<div class="search-more">' + matches.length + ' results found</div>';
 
     results.innerHTML = html;
   }
@@ -148,6 +173,16 @@
     results.innerHTML = '';
     setTimeout(function() { input.focus(); }, 100);
     document.body.style.overflow = 'hidden';
+
+    // Lazy-load search data when overlay is first opened
+    if (!searchData) {
+      loadSearchData(function() {
+        // Re-trigger search if user has already typed something
+        if (input.value.trim()) {
+          doSearch(input.value);
+        }
+      });
+    }
   }
 
   function hideSearch() {
@@ -177,6 +212,5 @@
     }
   });
 
-  // Load data on page load
-  loadSearchData();
+  // Data is now loaded lazily when search is first opened — no preloading
 })();
