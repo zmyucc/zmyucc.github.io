@@ -2,6 +2,25 @@
 (function() {
   'use strict';
 
+  // --- Wrap post-body tables in scrollable containers ---
+  function wrapTables() {
+    var tables = document.querySelectorAll('.post-body table');
+    for (var i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      // Skip tables that are inside a highlight figure (code blocks)
+      if (table.closest('figure.highlight')) continue;
+      // Skip already-wrapped tables
+      if (table.parentNode.classList.contains('table-wrapper')) continue;
+
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  }
+
+  wrapTables();
+
   // Back to top button
   var backToTop = document.createElement('div');
   backToTop.className = 'back-to-top';
