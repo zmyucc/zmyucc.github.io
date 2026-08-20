@@ -20,4 +20,26 @@
   backToTop.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // Wrap tables in scrollable containers for overflow handling
+  var tables = document.querySelectorAll('.post-body > table');
+  for (var i = 0; i < tables.length; i++) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'table-wrapper';
+    tables[i].parentNode.insertBefore(wrapper, tables[i]);
+    wrapper.appendChild(tables[i]);
+  }
+
+  // Table shadow management: only show shadows when content overflows
+  function updateTableShadows() {
+    var wrappers = document.querySelectorAll('.table-wrapper');
+    for (var i = 0; i < wrappers.length; i++) {
+      var w = wrappers[i];
+      w.classList.toggle('has-overflow', w.scrollWidth > w.clientWidth);
+    }
+  }
+
+  // Update on resize and initial load
+  window.addEventListener('resize', updateTableShadows);
+  updateTableShadows();
 })();
