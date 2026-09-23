@@ -71,6 +71,25 @@
     }
   }
 
+  // search.xml stores each post body as rendered HTML. Convert it to plain
+  // text before matching or showing snippets, otherwise tags such as
+  // <p>, <figure class="highlight"> leak into the results as literal text.
+  function stripHtml(html) {
+    var div = document.createElement('div');
+    div.innerHTML = html;
+    return (div.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  // Plain-text view of an entry, computed on first use and cached on the item.
+  // Stripping here (instead of at parse time) also fixes snippets for entries
+  // restored from a stale sessionStorage cache written by an older version.
+  function plainContent(item) {
+    if (item._text == null) {
+      item._text = stripHtml(item.content);
+    }
+    return item._text;
+  }
+
   function doSearch(query) {
     if (!searchData) {
       results.innerHTML = '<div class="search-no-results">搜索数据加载中...</div>';
@@ -92,7 +111,8 @@
       if (item.title.toLowerCase().indexOf(q) !== -1) {
         score += 10;
       }
-      if (item.content.toLowerCase().indexOf(q) !== -1) {
+      var plain = plainContent(item);
+      if (plain.toLowerCase().indexOf(q) !== -1) {
         score += 1;
       }
       if (item.categories.toLowerCase().indexOf(q) !== -1) {
@@ -114,7 +134,7 @@
     var html = '<ul class="search-results-list">';
     for (var j = 0; j < matches.length; j++) {
       var m = matches[j];
-      var snippet = getSnippet(m.item.content, q, 120);
+      var snippet = getSnippet(plainContent(m.item), q, 120);
       var catHtml = m.item.categories ? '<span class="search-result-category">' + escapeHtml(m.item.categories) + '</span>' : '';
       html += '<li class="search-result-item">';
       html += '<a href="' + m.item.url + '" class="search-result-title">' + highlightMatch(m.item.title, q) + '</a>';
